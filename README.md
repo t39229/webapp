@@ -25,7 +25,7 @@ Run terraform commands:
 ~ terraform apply
 Once the following resources are created:
 Move the generated Kubeconfig file to ~/.kube/config
-mv kubeconfig ~/.kube/config
+mv kubeconfig ~/.kube/config.
 Run kubectl get no -A and verify 2 nodes are created.
 
 Deploy web application.
@@ -45,3 +45,5 @@ Check for a public IP address for the store-front application. Monitor progress 
 ~ kubectl get service store-front --watch
 Once the EXTERNAL-IP address changes from pending to an actual public IP address, use CTRL-C to stop the kubectl watch process.
 Open a web browser to the external IP address of your service to see the Azure Store app in action.
+Note: the following deploymnet set with replicas:2 as highly aviability solution
+you can see it that 2 pods of each service running on different node by command:  kubectl get po -n app -o wide
