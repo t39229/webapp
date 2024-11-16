@@ -26,4 +26,4 @@ Run terraform commands:
 Once the following resources are created:
 Move the generated Kubeconfig file to ~/.kube/config
 mv kubeconfig ~/.kube/config
-Run kubectl get no -A and verify 2 nodes created.
+Run kubectl get no -A and verify 2 nodes are created.
