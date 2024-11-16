@@ -17,7 +17,7 @@ Make sure you are login to Azure portal first.
 az login
 Choose your Microsoft credentials.
 Git clone to your machine https://github.com/t39229/webapp.git 
-Open terraform folder with vscode
+Open terraform folder with vscode.
 change in terraform.ftvars acr_name to your uniq value.
 Run terraform commands:
 ~ terraform init
